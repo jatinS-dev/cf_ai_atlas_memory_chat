@@ -1,0 +1,18 @@
+﻿# Dependencies
+node_modules/
+
+# Wrangler
+.wrangler/
+.wrangler/state/
+
+# Env files
+.env
+.env.*
+.dev.vars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/

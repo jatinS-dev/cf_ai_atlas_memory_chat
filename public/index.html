@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloudflare Atlas AI</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Cloudflare AI + Durable Objects</p>
+          <h1>Atlas Memory Chat</h1>
+          <p class="lead">
+            An AI assistant powered by Llama 3.3 on Workers AI with durable, session-based memory.
+          </p>
+        </div>
+        <div class="hero-card">
+          <p class="label">Active Session</p>
+          <p id="session-id" class="session"></p>
+          <button id="new-session" class="ghost">Start fresh</button>
+        </div>
+      </header>
+
+      <main class="chat">
+        <div id="messages" class="messages"></div>
+        <form id="chat-form" class="composer">
+          <input
+            id="message-input"
+            type="text"
+            placeholder="Ask about Workers, Workflows, or anything Cloudflare..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit" id="send">Send</button>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <span>Memory stored per session in Durable Object storage.</span>
+        <span>Built on Cloudflare Workers AI.</span>
+      </footer>
+    </div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
