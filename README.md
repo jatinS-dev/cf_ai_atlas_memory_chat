@@ -8,7 +8,6 @@ Atlas Memory Chat is an AI-powered chat app built on Cloudflare Workers AI with 
 ## Screenshot
 ![Atlas Memory Chat UI](docs/screenshot.png)
 
-Replace `docs/screenshot.svg` with a real screenshot of your deployed UI.
 
 ## What it demonstrates
 - **LLM**: Llama 3.3 on Workers AI
